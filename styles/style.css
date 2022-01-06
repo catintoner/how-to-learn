@@ -1,5 +1,6 @@
-p, h2, h3 {
+p, h2, h3,h4, ul {
   margin: 0;
+  padding: 0;
 }
 
 .page {
@@ -18,10 +19,21 @@ p, h2, h3 {
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  border: red solid 1px;
   position: relative;
   display: flex;
   /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 3;
 }
 
 .header__title {
@@ -75,23 +87,115 @@ p, h2, h3 {
   background-color: #2f80ed;
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  width: 80%;
+  max-height: 500px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  flex-direction: column;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__paragraph:nth-child(2) {
+  margin: 30px 0;
+}
+
+.two-columns__span-accent {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  padding-top: 100px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.table__cell {
+  width: 250px;
+  padding-top: 60px;
+  list-style-type: none;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+ /* padding-top: 20px; */
+}
+
+.table__text p {
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-.logo {
-  width: 183px;
-  height: 32px;
-}
-
-.logo_place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  z-index: 3;
-
 }
