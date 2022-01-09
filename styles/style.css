@@ -36,6 +36,11 @@ p, h2, h3,h4, ul {
   z-index: 3;
 }
 
+.logo_place_footer {
+  background-image: url('../images/logo_place_footer.svg');
+  background-size: cover;
+}
+
 .header__title {
   display: flex;
   margin-left: 64px;
@@ -281,6 +286,7 @@ p, h2, h3,h4, ul {
   min-height: 350px;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .footer__columns {
@@ -290,21 +296,50 @@ p, h2, h3,h4, ul {
 }
 
 .footer__author {
-
+  padding: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 711px;
 }
 
 .footer__column_content_info {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_social {
-
+  display: flex;
+  flex-direction: column;
 }
 
-.logo_place_footer {
-  background-image: url(../images/logo_place_footer.svg);
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  margin: 20px 0 16px;
+  list-style-type: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  color: white;
+  height: 10px;
 }
