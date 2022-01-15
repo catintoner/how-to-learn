@@ -1,7 +1,7 @@
-p, h1, h2, h3,h4, ul {
+/* p, h1, h2, h3,h4, ul {
   margin: 0;
   padding: 0;
-}
+} */
 
 .page {
   min-width: 1100px;
@@ -43,7 +43,7 @@ p, h1, h2, h3,h4, ul {
 
 .header__title {
   display: flex;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   align-items: center;
   width: 730px;
   font-size: 102px;
@@ -53,6 +53,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .header__subtitle {
+  margin: 0;
   width: 388px;
   position: absolute;
   left: 64px;
@@ -103,10 +104,10 @@ p, h1, h2, h3,h4, ul {
   justify-content: space-between;
   padding-top: 100px;
   width: 80%;
-  max-height: 500px;
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -121,13 +122,14 @@ p, h1, h2, h3,h4, ul {
 }
 
 .two-columns__paragraph {
+  margin: 0 0 30px;
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
 }
 
-.two-columns__paragraph:nth-child(2) {
-  margin: 30px 0;
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -144,6 +146,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .section-title {
+  margin: 0;
   width: 60%;
   text-align: center;
   line-height: 1.15;
@@ -153,6 +156,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .section-subtitle {
+  margin: 0;
   width: 60%;
   text-align: center;
   padding-top: 20px;
@@ -162,6 +166,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .table {
+  padding: 0;
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -175,23 +180,21 @@ p, h1, h2, h3,h4, ul {
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
+  padding-top: 20px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
-.table__text p {
-  padding-top: 20px;
-}
-
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   position: relative;
   display: flex;
@@ -204,7 +207,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .feynman__title {
-  margin-top: 100px;
+  margin: 100px 0 0;
   width: 648px;
   text-align: center;
   line-height: 1.15;
@@ -213,6 +216,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .feynman__subtitle {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -247,6 +251,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .kaufman__triangle {
+  background-image: url('../images/kaufman-triangle.svg');
   position: absolute;
   top: 0;
   right: -210px;
@@ -287,6 +292,7 @@ p, h1, h2, h3,h4, ul {
 }
 
 .footer {
+  box-sizing: border-box;
   background-color: #1f1f1f;
   padding: 60px 0 40px 0;
   min-height: 350px;
@@ -330,11 +336,12 @@ p, h1, h2, h3,h4, ul {
 
 .footer__column-heading {
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 .footer__column-links {
-  margin-bottom: 16px;
+  padding: 0;
+  margin: 0 0 16px;
   list-style-type: none;
   font-weight: normal;
 }
