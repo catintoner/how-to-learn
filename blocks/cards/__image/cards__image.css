@@ -1,0 +1,13 @@
+@import url('../__image/_attention/cards__image_attention.css');
+@import url('../__image/_recall/cards__image_recall.css');
+@import url('../__image/competence/cards__image_competence.css');
+@import url('../__image/interliving/cards__image_interliving.css');
+@import url('../__image/question/cards__image_question.css');
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
