@@ -1,4 +1,10 @@
 .oakley {
+  margin-top: -100px;
   display: flex;
   justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.oakley .two-columns {
+  padding-top: 160px;
 }
