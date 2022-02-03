@@ -2,6 +2,6 @@
   margin-right: 48px;
   width: 620px;
   height: 608px;
-  overflow: hidden;
-  box-sizing: border-box;
+  object-fit: cover;
+  object-position: top;
 }

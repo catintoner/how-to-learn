@@ -6,7 +6,6 @@
   align-items: center;
 }
 
-
 .cards__item:nth-child(2n+3) {
   padding-right: 0;
 }
